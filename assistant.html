@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Assistant – NyayaAI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo"><span class="logo-icon">⚖️</span> NyayaAI</a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="assistant.html" class="nav-link active">AI Assistant</a></li>
+        <li><a href="guides.html" class="nav-link">Legal Guides</a></li>
+        <li><a href="templates.html" class="nav-link">Templates</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="login.html" class="nav-link">Login / Sign Up</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+    </nav>
+  </header>
+
+  <main class="assistant-page">
+    <section class="section ai-assistant-full">
+      <div class="container">
+        <h1 class="section-title reveal">AI Legal Assistant</h1>
+        <p class="section-subtitle reveal">Ask any legal question – get plain‑language guidance instantly.</p>
+
+        <div class="demo-container reveal" style="margin-top: 2rem;">
+          <div class="chat-window glass-card" style="flex: 1 1 700px; max-width: 800px;">
+            <div class="chat-header"><span>🤖 NyayaAI Assistant</span><span class="online-dot"></span></div>
+            <div class="chat-body" id="chatBody" style="max-height: 500px;">
+              <div class="message ai-message">
+                <div class="bubble ai-bubble">Hello! I'm NyayaAI. Describe your legal issue, and I'll provide guidance based on Indian law.</div>
+              </div>
+              <div class="typing-indicator" id="typingIndicator" style="display: none;"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+            </div>
+            <div class="chat-input">
+              <input type="text" placeholder="E.g., My landlord refuses to return my security deposit..." id="chatInput" />
+              <button class="btn btn-primary btn-sm" id="sendBtn">Send</button>
+            </div>
+          </div>
+          <div class="side-panel glass-card">
+            <h3>⚡ Quick Topics</h3>
+            <ul class="topic-list">
+              <li data-topic="Consumer Rights"><span class="topic-icon">⚖️</span> Consumer Rights</li>
+              <li data-topic="Cybercrime"><span class="topic-icon">🔒</span> Cybercrime</li>
+              <li data-topic="Property Issues"><span class="topic-icon">🏠</span> Property Issues</li>
+              <li data-topic="Employment Rights"><span class="topic-icon">💼</span> Employment Rights</li>
+              <li data-topic="Legal Templates"><span class="topic-icon">📄</span> Legal Templates</li>
+            </ul>
+            <p class="side-note">Click a topic for a quick example question.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col"><h4 class="footer-logo">⚖️ NyayaAI</h4><p>Empowering citizens with plain‑language legal guidance.</p></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="guides.html">Guides</a></li><li><a href="templates.html">Templates</a></li></ul></div>
+      <div class="footer-col"><h4>Resources</h4><ul><li><a href="about.html">About</a></li><li><a href="assistant.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li><li><a href="#">Disclaimer</a></li></ul></div>
+    </div>
+    <div class="footer-bottom container">
+      <div class="social-icons"><a href="#">📘</a><a href="#">🐦</a><a href="#">📷</a><a href="#">💼</a></div>
+      <p class="footer-copy">&copy; 2025 NyayaAI</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+  <script>
+    // Override the AI demo functionality for full page (same logic, just resets context)
+    // Keep existing script.js, but ensure chatBody exists. The script.js already handles send & typing.
+    // Also hook quick-topic clicks to auto-fill input
+    document.querySelectorAll('.topic-list li').forEach(li => {
+      li.addEventListener('click', () => {
+        const topic = li.dataset.topic;
+        let question = '';
+        switch(topic) {
+          case 'Consumer Rights': question = 'I bought a defective product and the shop refuses to refund. What can I do?'; break;
+          case 'Cybercrime': question = 'I was scammed online and lost money. How do I file a cybercrime complaint?'; break;
+          case 'Property Issues': question = 'My tenant hasn’t paid rent for 3 months. What legal steps can I take?'; break;
+          case 'Employment Rights': question = 'My employer terminated me without notice. Is that legal?'; break;
+          case 'Legal Templates': question = 'I need a draft complaint letter for a consumer forum.'; break;
+        }
+        document.getElementById('chatInput').value = question;
+        document.getElementById('sendBtn').click();
+      });
+    });
+  </script>
+</body>
+</html>

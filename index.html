@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NyayaAI – AI Legal Assistant for Indian Citizens</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- ================= HEADER & NAVBAR ================= -->
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo" aria-label="NyayaAI Home">
+        <span class="logo-icon">⚖️</span> NyayaAI
+      </a>
+      <ul class="nav-menu" id="nav-menu" role="menubar">
+        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="assistant.html" class="nav-link">AI Assistant</a></li>
+        <li class="nav-item"><a href="guides.html" class="nav-link">Legal Guides</a></li>
+        <li class="nav-item"><a href="templates.html" class="nav-link">Templates</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="login.html" class="nav-link">Login / Sign Up</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero" id="home">
+      <div class="floating-shapes" aria-hidden="true">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+      </div>
+      <div class="hero-container container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Understand Your <span class="gold-text">Legal Rights</span> in Minutes
+          </h1>
+          <p class="hero-subtitle">
+            Get plain‑language legal guidance, draft FIRs & consumer complaints, and explore your rights — powered by AI, tailored for Indian citizens.
+          </p>
+          <div class="hero-actions">
+            <a href="assistant.html" class="btn btn-primary btn-lg">Ask AI Assistant</a>
+            <a href="#features" class="btn btn-outline btn-lg">Explore Features</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="hero-illustration" role="img" aria-label="Scales of Justice illustration">
+            <circle cx="100" cy="100" r="90" fill="#f0f9ff" stroke="#1a365d" stroke-width="2"/>
+            <line x1="60" y1="70" x2="140" y2="70" stroke="#d4af37" stroke-width="4" stroke-linecap="round"/>
+            <line x1="100" y1="70" x2="100" y2="30" stroke="#d4af37" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="70" cy="120" r="15" fill="none" stroke="#1a365d" stroke-width="4"/>
+            <circle cx="130" cy="120" r="15" fill="none" stroke="#1a365d" stroke-width="4"/>
+            <line x1="55" y1="120" x2="40" y2="155" stroke="#1a365d" stroke-width="4" stroke-linecap="round"/>
+            <line x1="145" y1="120" x2="160" y2="155" stroke="#1a365d" stroke-width="4" stroke-linecap="round"/>
+            <path d="M 40 155 L 100 180 L 160 155" fill="none" stroke="#1a365d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="section-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+          <path d="M0,40 C480,0 960,60 1440,20 L1440,60 L0,60 Z" fill="#ffffff"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ================= FEATURES SECTION ================= -->
+    <section class="features section" id="features">
+      <div class="container">
+        <h2 class="section-title reveal">How NyayaAI Helps You</h2>
+        <div class="features-grid reveal">
+          <div class="feature-card glass-card">
+            <div class="feature-icon">⚖️</div>
+            <h3>Consumer Rights Guidance</h3>
+            <p>Understand your rights as a buyer — defective products, overcharging, service deficiencies and more.</p>
+          </div>
+          <div class="feature-card glass-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Cybercrime Assistance</h3>
+            <p>Guidance on online fraud, identity theft, hacking, and how to file a cybercrime complaint.</p>
+          </div>
+          <div class="feature-card glass-card">
+            <div class="feature-icon">🏠</div>
+            <h3>Tenant & Property Help</h3>
+            <p>Rent agreements, eviction rules, deposit disputes — know your rights as a tenant or landlord.</p>
+          </div>
+          <div class="feature-card glass-card">
+            <div class="feature-icon">💼</div>
+            <h3>Employment Rights Support</h3>
+            <p>Wrongful termination, unpaid wages, harassment — learn what Indian labour laws protect you.</p>
+          </div>
+          <div class="feature-card glass-card">
+            <div class="feature-icon">📄</div>
+            <h3>Legal Document Templates</h3>
+            <p>Download and fill ready‑to‑use complaint letters, notices, affidavits — no legal jargon.</p>
+          </div>
+          <div class="feature-card glass-card">
+            <div class="feature-icon">🤖</div>
+            <h3>AI Legal Assistant</h3>
+            <p>Chat with our AI to get instant answers to everyday legal questions — available 24/7.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TRUST SECTION ================= -->
+    <section class="trust section" id="trust">
+      <div class="container">
+        <h2 class="section-title reveal">Trusted Legal Guidance for Every Citizen</h2>
+        <div class="trust-grid reveal">
+          <div class="trust-badge"><span class="trust-icon">📖</span><h3>Easy to Understand</h3><p>Complex laws broken into simple, everyday language.</p></div>
+          <div class="trust-badge"><span class="trust-icon">⏰</span><h3>Available 24/7</h3><p>Get legal guidance anytime, anywhere — day or night.</p></div>
+          <div class="trust-badge"><span class="trust-icon">🔐</span><h3>Secure & Private</h3><p>Your questions and data are never stored or shared.</p></div>
+          <div class="trust-badge"><span class="trust-icon">🇮🇳</span><h3>Based on Indian Legal Information</h3><p>All content aligns with Indian laws and common legal procedures.</p></div>
+        </div>
+      </div>
+      <div class="section-divider wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+          <path d="M0,20 C480,40 960,0 1440,20 L1440,60 L0,60 Z" fill="#f8fafc"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ================= HOW IT WORKS ================= -->
+    <section class="how-it-works section" id="how-it-works">
+      <div class="container">
+        <h2 class="section-title reveal">Get Legal Guidance in 4 Simple Steps</h2>
+        <div class="timeline reveal">
+          <div class="timeline-step">
+            <div class="step-icon">1️⃣</div>
+            <div class="step-content"><h3>Describe Your Legal Issue</h3><p>Tell us in plain language what happened — no legal jargon needed.</p></div>
+          </div>
+          <div class="timeline-connector"></div>
+          <div class="timeline-step">
+            <div class="step-icon">2️⃣</div>
+            <div class="step-content"><h3>AI Analyzes Your Situation</h3><p>Our AI scans a verified knowledge base to understand your rights and options.</p></div>
+          </div>
+          <div class="timeline-connector"></div>
+          <div class="timeline-step">
+            <div class="step-icon">3️⃣</div>
+            <div class="step-content"><h3>Receive Simplified Guidance</h3><p>Get clear, actionable steps in everyday English — no complex legal terms.</p></div>
+          </div>
+          <div class="timeline-connector"></div>
+          <div class="timeline-step">
+            <div class="step-icon">4️⃣</div>
+            <div class="step-content"><h3>Access Resources & Next Steps</h3><p>Download complaint templates, contact relevant authorities, or consult a lawyer if needed.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LEGAL CATEGORIES ================= -->
+    <section class="categories section" id="categories">
+      <div class="container">
+        <h2 class="section-title reveal">Explore Legal Topics</h2>
+        <div class="categories-grid reveal">
+          <div class="category-card glass-card"><span class="category-icon">⚖️</span><h3>Consumer Complaints</h3><p>Defective products, unfair trade practices, refunds — know your rights as a consumer.</p><a href="#" class="btn btn-outline btn-sm">Learn More</a></div>
+          <div class="category-card glass-card"><span class="category-icon">🔒</span><h3>Cybercrime & Online Fraud</h3><p>Online scams, identity theft, hacking — how to report and stay safe.</p><a href="#" class="btn btn-outline btn-sm">Learn More</a></div>
+          <div class="category-card glass-card"><span class="category-icon">🏠</span><h3>Tenant & Property Issues</h3><p>Rent disputes, eviction rules, deposit recovery — guidance for tenants and landlords.</p><a href="#" class="btn btn-outline btn-sm">Learn More</a></div>
+          <div class="category-card glass-card"><span class="category-icon">💼</span><h3>Employment & Labour Rights</h3><p>Wrongful termination, unpaid wages, workplace harassment — learn your protections.</p><a href="#" class="btn btn-outline btn-sm">Learn More</a></div>
+          <div class="category-card glass-card"><span class="category-icon">🚦</span><h3>Traffic Violations</h3><p>Challan disputes, license suspension, accident procedures — understand traffic laws.</p><a href="#" class="btn btn-outline btn-sm">Learn More</a></div>
+          <div class="category-card glass-card"><span class="category-icon">👨‍👩‍👧</span><h3>Family Law Basics</h3><p>Marriage, divorce, child custody, maintenance — get the fundamentals.</p><a href="#" class="btn btn-outline btn-sm">Learn More</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AI LEGAL ASSISTANT DEMO ================= -->
+    <section class="ai-demo section" id="ai-demo">
+      <div class="container">
+        <h2 class="section-title reveal">Experience AI‑Powered Legal Guidance</h2>
+        <p class="section-subtitle reveal">See how NyayaAI helps simplify complex legal issues into clear and actionable guidance.</p>
+        <div class="demo-container reveal">
+          <div class="chat-window glass-card">
+            <div class="chat-header"><span>🤖 NyayaAI Assistant</span><span class="online-dot"></span></div>
+            <div class="chat-body" id="chatBody">
+              <div class="message user-message"><div class="bubble user-bubble">My employer has not paid my salary for 2 months.</div></div>
+              <div class="message ai-message"><div class="bubble ai-bubble">Based on Indian labour regulations, delayed salary payments may violate employee rights. You may consider filing a complaint with the Labour Commissioner and maintaining records of communication with your employer.</div></div>
+              <div class="typing-indicator" id="typingIndicator" style="display: none;"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+            </div>
+            <div class="chat-input">
+              <input type="text" placeholder="Type your legal question..." id="chatInput" aria-label="Chat input" />
+              <button class="btn btn-primary btn-sm" id="sendBtn">Send</button>
+            </div>
+          </div>
+          <div class="side-panel glass-card">
+            <h3>⚡ Quick Topics</h3>
+            <ul class="topic-list">
+              <li><span class="topic-icon">⚖️</span> Consumer Rights</li>
+              <li><span class="topic-icon">🔒</span> Cybercrime</li>
+              <li><span class="topic-icon">🏠</span> Property Issues</li>
+              <li><span class="topic-icon">💼</span> Employment Rights</li>
+              <li><span class="topic-icon">📄</span> Legal Templates</li>
+            </ul>
+            <p class="side-note">Click any topic to start a chat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= IMPACT & TRUST (Stats, Testimonials, Stories) ================= -->
+    <section class="impact section" id="impact">
+      <div class="container">
+        <h2 class="section-title reveal">Making Legal Information Accessible</h2>
+        <div class="stats-grid reveal">
+          <div class="stat-card glass-card"><span class="stat-number" data-target="10000">0</span><span class="stat-suffix">+</span><p class="stat-label">Questions Answered</p></div>
+          <div class="stat-card glass-card"><span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span><p class="stat-label">Legal Templates</p></div>
+          <div class="stat-card glass-card"><span class="stat-number" data-target="24">24</span><span class="stat-suffix">/7</span><p class="stat-label">AI Assistance</p></div>
+          <div class="stat-card glass-card"><span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span><p class="stat-label">Legal Topics Covered</p></div>
+        </div>
+
+        <h2 class="section-title reveal" style="margin-top: 4rem;">What People Say About NyayaAI</h2>
+        <div class="testimonials-grid reveal">
+          <div class="testimonial-card glass-card">
+            <div class="testimonial-header"><div class="avatar avatar-blue">R</div><div><h4>Riya Sharma</h4><span class="occupation">College Student</span></div></div>
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">“I had no idea how to file a cybercrime complaint. NyayaAI guided me step‑by‑step and even gave me a draft. Truly empowering!”</p>
+          </div>
+          <div class="testimonial-card glass-card">
+            <div class="testimonial-header"><div class="avatar avatar-gold">A</div><div><h4>Arjun Mehta</h4><span class="occupation">Working Professional</span></div></div>
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">“My employer withheld my salary for months. The AI explained my rights clearly and helped me draft a legal notice. Highly recommended.”</p>
+          </div>
+          <div class="testimonial-card glass-card">
+            <div class="testimonial-header"><div class="avatar avatar-green">S</div><div><h4>Sneha Patel</h4><span class="occupation">Small Business Owner</span></div></div>
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">“Understanding tenant agreements used to be a nightmare. NyayaAI broke it down so I could protect my shop. Invaluable service!”</p>
+          </div>
+        </div>
+
+        <h2 class="section-title reveal" style="margin-top: 4rem;">How NyayaAI Helps Citizens</h2>
+        <div class="stories-grid reveal">
+          <div class="story-card glass-card"><span class="story-icon">✅</span><h3>Consumer Complaint Resolved</h3><p>A faulty smartphone purchase was resolved after the user drafted a legal notice using NyayaAI’s template. The company issued a full refund.</p><a href="#" class="btn btn-outline btn-sm">Learn More</a></div>
+          <div class="story-card glass-card"><span class="story-icon">🛡️</span><h3>Cybercrime Reporting Guidance</h3><p>An online fraud victim received real‑time assistance on filing an FIR with the cyber cell, leading to a swift investigation.</p><a href="#" class="btn btn-outline btn-sm">Learn More</a></div>
+          <div class="story-card glass-card"><span class="story-icon">💼</span><h3>Employment Rights Assistance</h3><p>A restaurant worker recovered unpaid wages after NyayaAI helped her understand labour laws and the complaint process.</p><a href="#" class="btn btn-outline btn-sm">Learn More</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ SECTION ================= -->
+    <section class="faq section" id="faq">
+      <div class="container">
+        <h2 class="section-title reveal">Frequently Asked Questions</h2>
+        <div class="faq-grid reveal">
+          <div class="faq-item glass-card">
+            <button class="faq-question">1. Is NyayaAI a replacement for a lawyer? <span class="faq-icon">+</span></button>
+            <div class="faq-answer"><p>No. NyayaAI provides informational guidance only and does not constitute legal advice. You should always consult a qualified legal professional for your specific situation.</p></div>
+          </div>
+          <div class="faq-item glass-card">
+            <button class="faq-question">2. How accurate is the legal information? <span class="faq-icon">+</span></button>
+            <div class="faq-answer"><p>Our knowledge base is curated from verified legal sources and general principles. However, laws can change and vary by jurisdiction. Always verify with a lawyer.</p></div>
+          </div>
+          <div class="faq-item glass-card">
+            <button class="faq-question">3. Is my data secure? <span class="faq-icon">+</span></button>
+            <div class="faq-answer"><p>Absolutely. We do not store or share your personal information. All interactions are encrypted and private.</p></div>
+          </div>
+          <div class="faq-item glass-card">
+            <button class="faq-question">4. Can NyayaAI help with court cases? <span class="faq-icon">+</span></button>
+            <div class="faq-answer"><p>NyayaAI cannot represent you in court or predict case outcomes. It can help you understand procedures and prepare basic documentation.</p></div>
+          </div>
+          <div class="faq-item glass-card">
+            <button class="faq-question">5. What legal topics are supported? <span class="faq-icon">+</span></button>
+            <div class="faq-answer"><p>We cover consumer rights, cybercrime, tenant/property issues, employment laws, traffic violations, family law basics, and more.</p></div>
+          </div>
+          <div class="faq-item glass-card">
+            <button class="faq-question">6. Is the service free to use? <span class="faq-icon">+</span></button>
+            <div class="faq-answer"><p>Yes, the core AI assistant and knowledge base are free. Premium features may be offered in the future, but basic guidance remains free.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section-title reveal">Contact Us</h2>
+        <div class="contact-wrapper reveal">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group"><input type="text" placeholder="Full Name" required aria-label="Full Name" /></div>
+            <div class="form-group"><input type="email" placeholder="Email Address" required aria-label="Email Address" /></div>
+            <div class="form-group"><input type="text" placeholder="Subject" required aria-label="Subject" /></div>
+            <div class="form-group"><textarea placeholder="Your Message" rows="5" required aria-label="Message"></textarea></div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          </form>
+          <div class="contact-info">
+            <div class="info-item"><span class="info-icon">📧</span><div><strong>Support Email</strong><br>support@nyayaai.com</div></div>
+            <div class="info-item"><span class="info-icon">📞</span><div><strong>Phone</strong><br>+91 12345 67890</div></div>
+            <div class="info-item"><span class="info-icon">📍</span><div><strong>Office</strong><br>New Delhi, India (Virtual)</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NEWSLETTER SECTION ================= -->
+    <section class="newsletter section" id="newsletter">
+      <div class="container reveal">
+        <h2 class="section-title">Stay Updated on Legal Rights</h2>
+        <p class="section-subtitle">Get legal awareness tips, updates, and guides directly in your inbox.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Enter your email" required aria-label="Email for newsletter" />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ================= LEGAL DISCLAIMER ================= -->
+    <section class="disclaimer-banner" id="disclaimer">
+      <div class="container">
+        <div class="disclaimer-card reveal">
+          <p>⚖️ <strong>Legal Disclaimer:</strong> NyayaAI provides informational guidance only and does not constitute legal advice. Users should consult a qualified legal professional for specific legal matters.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4 class="footer-logo">⚖️ NyayaAI</h4>
+        <p>Empowering citizens with plain‑language legal guidance powered by AI.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="guides.html">Guides</a></li>
+          <li><a href="templates.html">Templates</a></li>
+          <li><a href="assistant.html">AI Assistant</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#disclaimer">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="Twitter">🐦</a>
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="LinkedIn">💼</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 NyayaAI — AI Legal Assistant for Indian Citizens</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
